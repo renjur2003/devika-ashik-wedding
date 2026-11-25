@@ -181,3 +181,52 @@ export const FloralDivider: React.FC<{ className?: string; color?: string }> = (
   </div>
 );
 
+// High-End Royal D&A Monogram Symbol with Botanical Ring
+export const DAMonogram: React.FC<{ className?: string; size?: number }> = ({
+  className = '',
+  size = 110,
+}) => (
+  <div className={`relative inline-flex items-center justify-center select-none ${className}`}>
+    <svg width={size} height={size} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      {/* Outer Glow Halo */}
+      <circle cx="60" cy="60" r="54" stroke="url(#goldGrad)" strokeWidth="1.5" strokeDasharray="3 3" opacity="0.6" />
+      <circle cx="60" cy="60" r="48" stroke="url(#goldGrad)" strokeWidth="1" opacity="0.8" />
+      
+      {/* Botanical Jasmine & Vine Laurel Wreath */}
+      <path d="M22 60 C22 38 38 22 60 22 C64 22 68 23 72 25" stroke="#8FA88B" strokeWidth="1.2" strokeLinecap="round" />
+      <path d="M98 60 C98 82 82 98 60 98 C56 98 52 97 48 95" stroke="#8FA88B" strokeWidth="1.2" strokeLinecap="round" />
+      
+      {/* Little Botanical Leaves on wreath */}
+      <ellipse cx="25" cy="45" rx="3" ry="1.5" transform="rotate(-30 25 45)" fill="#8FA88B" opacity="0.85" />
+      <ellipse cx="32" cy="32" rx="3" ry="1.5" transform="rotate(-50 32 32)" fill="#8FA88B" opacity="0.85" />
+      <ellipse cx="46" cy="24" rx="3" ry="1.5" transform="rotate(-70 46 24)" fill="#8FA88B" opacity="0.85" />
+      <ellipse cx="95" cy="75" rx="3" ry="1.5" transform="rotate(150 95 75)" fill="#8FA88B" opacity="0.85" />
+      <ellipse cx="88" cy="88" rx="3" ry="1.5" transform="rotate(130 88 88)" fill="#8FA88B" opacity="0.85" />
+      <ellipse cx="74" cy="96" rx="3" ry="1.5" transform="rotate(110 74 96)" fill="#8FA88B" opacity="0.85" />
+      
+      {/* Tiny Jasmine Blossoms */}
+      <circle cx="60" cy="18" r="2.5" fill="#E8A598" />
+      <circle cx="60" cy="102" r="2.5" fill="#E8A598" />
+      
+      {/* Interlocking Monogram D & A */}
+      <text x="44" y="68" fontFamily="'Playfair Display', Georgia, serif" fontSize="28" fontWeight="600" fill="url(#goldGrad)" textAnchor="middle">
+        D
+      </text>
+      <text x="60" y="64" fontFamily="'Great Vibes', cursive" fontSize="20" fill="#E8A598" textAnchor="middle">
+        &amp;
+      </text>
+      <text x="76" y="68" fontFamily="'Playfair Display', Georgia, serif" fontSize="28" fontWeight="600" fill="url(#goldGrad)" textAnchor="middle">
+        A
+      </text>
+
+      <defs>
+        <linearGradient id="goldGrad" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#C5A869" />
+          <stop offset="0.5" stopColor="#E5C992" />
+          <stop offset="1" stopColor="#A68748" />
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+);
+

@@ -56,16 +56,16 @@ export interface WeddingData {
 }
 
 export const weddingData: WeddingData = {
-  tagline: "A story that began in school, travelled across the miles, and now begins forever.",
+  tagline: "From Schoolmates to Soulmates",
   secondaryTagline: "Two hearts. One journey. A lifetime of love.",
   date: {
     gregorian: "26 December 2026",
     dayOfWeek: "Saturday",
     year: 2026,
     malayalam: "1202 Dhanu 11",
-    muhurtham: "10:30 AM to 11:30 AM",
-    // 26 Dec 2026 10:30 AM IST (UTC+5:30)
-    isoDateTimeIST: "2026-12-26T10:30:00+05:30",
+    muhurtham: "6:30 AM to 7:00 AM",
+    // 26 Dec 2026 06:30 AM IST (UTC+5:30)
+    isoDateTimeIST: "2026-12-26T06:30:00+05:30",
   },
   bride: {
     name: "Devika",
@@ -75,19 +75,18 @@ export const weddingData: WeddingData = {
     phone: "9446039152",
   },
   groom: {
-    name: "Ashik",
+    name: "Ashish",
     parents: "Mrs. Sreedevi & Mr. Anishkumar",
     address: "Madambatt House, Puthenpeedika",
   },
-  invitationMessage:
-    "With the blessings of our families, we cordially invite you and your family to celebrate the wedding of Devika and Ashik.\n\nYour presence and blessings will make our special day even more memorable.",
+  invitationMessage: "With the blessings of our parents",
   invitationCardNote: "Your presence and blessings mean the world to us.",
   sharingHappiness: "Sharing the happiness: Gopu",
   venues: {
     thalikettu: {
       name: "Sree Krishna Temple",
       location: "Guruvayur",
-      time: "10:30 AM – 11:30 AM",
+      time: "6:30 AM – 7:00 AM",
       eventType: "Thalikettu Ceremony",
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Sree+Krishna+Temple+Guruvayur",
     },
@@ -106,40 +105,30 @@ export const weddingData: WeddingData = {
   photos: [
     {
       id: "photo-01",
-      title: "Devika & Ashik",
-      subtitle: "The Romantic Portrait",
-      chapter: "Forever Together",
-      path: "/images/couple-01-black-outfits.png",
-      description: "Warmly lit intimate romantic portrait in black outfits",
+      title: "Devika & Ashish",
+      subtitle: "From Schoolmates to Soulmates",
+      chapter: "Our Beautiful Journey",
+      path: "/images/couple-04-night-candid.png",
+      description: "Devika in pink dress and Ashish in white t-shirt",
       aspectRatio: "aspect-[4/5]",
     },
     {
       id: "photo-02",
-      title: "Together Again",
+      title: "Festive Joy",
       subtitle: "A Festive Homecoming",
-      chapter: "Chapter 03 – The Beautiful Present",
+      chapter: "Celebration of Love",
       path: "/images/couple-02-maroon-saree.png",
       description: "Cream kurta and maroon saree portrait – festive couple moment",
       aspectRatio: "aspect-[4/5]",
     },
     {
       id: "photo-03",
-      title: "Shared Moments",
-      subtitle: "Pure Togetherness",
-      chapter: "Chapter 03 – Relationship Memories",
+      title: "Pure Togetherness",
+      subtitle: "Shared Moments",
+      chapter: "Cherished Memories",
       path: "/images/couple-03-blue-saree.png",
       description: "White shirt and royal-blue saree portrait – elegant togetherness",
       aspectRatio: "aspect-[4/5]",
     },
-    {
-      id: "photo-04",
-      title: "Under The Midnight Stars",
-      subtitle: "Unspoken Bonds",
-      chapter: "Chapter 03 – Emotional Memories",
-      path: "/images/couple-04-night-candid.png",
-      description: "Nighttime candid portrait – romantic memory",
-      aspectRatio: "aspect-[4/5]",
-    },
   ],
 };
-

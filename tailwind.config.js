@@ -39,6 +39,20 @@ export default {
           DEFAULT: '#66745D',
           dark: '#4B5744',
           light: '#87967D',
+        },
+        sage: {
+          DEFAULT: '#8FA88B',
+          light: '#EAF0E8',
+          soft: '#DCE7DA',
+          dark: '#4B6247',
+          deep: '#364B33',
+        },
+        rose: {
+          DEFAULT: '#E8A598',
+          light: '#FBF0EE',
+          soft: '#F4D8D2',
+          dark: '#B86A76',
+          deep: '#843C48',
         }
       },
       fontFamily: {

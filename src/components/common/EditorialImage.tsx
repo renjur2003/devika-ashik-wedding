@@ -64,7 +64,7 @@ export const EditorialImage: React.FC<EditorialImageProps> = ({
               <Camera className="w-7 h-7 text-gold" />
             </div>
             <span className="font-editorial text-lg text-burgundy font-medium tracking-wide">
-              {captionTitle || 'Devika & Ashik'}
+              {captionTitle || 'Devika & Ashish'}
             </span>
             <p className="font-romantic italic text-sm text-charcoal/70 mt-1 max-w-[200px]">
               {captionSubtitle || 'A treasured memory in the making'}
@@ -133,7 +133,7 @@ export const EditorialImage: React.FC<EditorialImageProps> = ({
                   </h3>
                   <p className="font-romantic italic text-sm text-ivory/80 mt-1 flex items-center justify-center gap-1.5">
                     <Heart className="w-3.5 h-3.5 text-gold fill-gold/40" />
-                    <span>Devika & Ashik • {captionSubtitle || 'Forever Together'}</span>
+                    <span>Devika &amp; Ashish • {captionSubtitle || 'Forever Together'}</span>
                   </p>
                 </div>
               )}
