@@ -17,7 +17,7 @@ export const PageTwoStory: React.FC<PageTwoStoryProps> = ({ onContinueToCeremony
       title: 'Devika & Ashish',
       subtitle: 'From Schoolmates to Soulmates',
       note: 'Where innocent beginnings quietly shaped two hearts for a lifetime.',
-      image: '/images/couple-04-night-candid.png',
+      image: '/images/couple-04-night-candid.jpg',
       objectPos: 'object-[center_12%]',
       bgEffect: '',
     },
@@ -26,7 +26,7 @@ export const PageTwoStory: React.FC<PageTwoStoryProps> = ({ onContinueToCeremony
       title: 'Festive Joy',
       subtitle: 'The Warmth of Togetherness',
       note: 'Dressed in festive traditional hues, celebrating the arrival of forever.',
-      image: '/images/couple-02-maroon-saree.png',
+      image: '/images/couple-02-maroon-saree.jpg',
       objectPos: 'object-top',
       bgEffect: '',
     },
@@ -35,7 +35,7 @@ export const PageTwoStory: React.FC<PageTwoStoryProps> = ({ onContinueToCeremony
       title: 'Timeless Elegance',
       subtitle: 'Side by Side, Hand in Hand',
       note: 'Serene moments adorned in royal blue, surrounded by soft floral grace.',
-      image: '/images/couple-03-blue-saree.png',
+      image: '/images/couple-03-blue-saree.jpg',
       objectPos: 'object-[center_15%]',
       // REQUIREMENT 11: Enhanced pastel botanical studio background styling for blue saree
       bgEffect: 'pastel-botanical-artistic',
@@ -128,6 +128,8 @@ export const PageTwoStory: React.FC<PageTwoStoryProps> = ({ onContinueToCeremony
                 <img
                   src={item.image}
                   alt={item.title}
+                  loading="eager"
+                  decoding="async"
                   className={`w-full h-full object-cover ${item.objectPos} transition-transform duration-700 group-hover:scale-104`}
                 />
 

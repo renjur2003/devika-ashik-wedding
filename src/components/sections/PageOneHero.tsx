@@ -115,8 +115,11 @@ export const PageOneHero: React.FC<PageOneHeroProps> = ({
             {/* The photo container with optimal height and object-position to guarantee Ashish's face is 100% visible */}
             <div className="relative w-full aspect-[4/4.2] sm:aspect-[4/5] rounded-xl overflow-hidden bg-[#FAF6EE] ring-1 ring-[#C5A869]/30">
               <img
-                src="/images/couple-04-night-candid.png"
+                src="/images/couple-04-night-candid.jpg"
                 alt="Devika & Ashish"
+                loading="eager"
+                decoding="async"
+                fetchPriority="high"
                 className="w-full h-full object-cover object-[center_12%] transition-transform duration-700 hover:scale-103"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent pointer-events-none" />
