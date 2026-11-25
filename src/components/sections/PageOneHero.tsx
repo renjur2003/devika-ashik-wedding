@@ -17,7 +17,7 @@ export const PageOneHero: React.FC<PageOneHeroProps> = ({
   const { bride, groom, date, venues, tagline, secondaryTagline } = weddingData;
 
   return (
-    <section className="relative min-h-screen w-full flex flex-col items-center justify-center py-14 px-4 sm:px-6 bg-wedding-pattern text-[#222921] overflow-hidden select-none">
+    <section className="relative min-h-screen w-full flex flex-col items-center justify-start sm:justify-center pt-12 pb-10 sm:py-14 px-3 sm:px-6 bg-wedding-pattern text-[#222921] overflow-hidden select-none">
       {/* Lush Pastel Ambient Glows & Kasavu Side Framing */}
       <div className="absolute top-6 left-1/2 -translate-x-1/2 w-[680px] h-[680px] rounded-full bg-gradient-to-tr from-[#8FA88B]/22 via-[#E8A598]/22 to-[#C5A869]/15 blur-[110px] pointer-events-none" />
       <div className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-[#E8A598]/25 blur-3xl pointer-events-none" />
@@ -48,13 +48,13 @@ export const PageOneHero: React.FC<PageOneHeroProps> = ({
           initial={{ scale: 0.7, opacity: 0, y: -20 }}
           animate={{ scale: 1, opacity: 1, y: 0 }}
           transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
-          className="relative mb-4 group cursor-pointer"
+          className="relative mb-1 sm:mb-4 group cursor-pointer scale-[0.72] sm:scale-100 -my-3 sm:my-0"
         >
           {/* Radiant Pulsing Rings */}
           <div className="absolute -inset-4 rounded-full bg-gradient-to-tr from-[#E8A598]/35 via-[#C5A869]/25 to-[#8FA88B]/30 blur-xl animate-pulse pointer-events-none" />
           <div className="absolute -inset-1.5 rounded-full border border-[#C5A869]/60 opacity-85 pointer-events-none" />
           
-          <div className="p-2.5 rounded-full bg-white/95 backdrop-blur-md shadow-[0_14px_38px_rgba(90,115,86,0.22)] border-2 border-[#C5A869]/55">
+          <div className="p-2 sm:p-2.5 rounded-full bg-white/95 backdrop-blur-md shadow-[0_14px_38px_rgba(90,115,86,0.22)] border-2 border-[#C5A869]/55">
             <DAMonogram size={108} />
           </div>
         </motion.div>
@@ -64,10 +64,10 @@ export const PageOneHero: React.FC<PageOneHeroProps> = ({
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/85 backdrop-blur-sm border border-[#8FA88B]/50 shadow-sm mb-4"
+          className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1 sm:py-1.5 rounded-full bg-white/85 backdrop-blur-sm border border-[#8FA88B]/50 shadow-sm mb-2 sm:mb-4 max-w-full"
         >
-          <GaneshaMotif size={20} color="#5A7356" />
-          <span className="text-[11px] sm:text-xs font-sans tracking-[0.22em] uppercase text-[#2F442C] font-bold">
+          <GaneshaMotif size={16} color="#5A7356" />
+          <span className="text-[9px] sm:text-xs font-sans tracking-[0.12em] sm:tracking-[0.22em] uppercase text-[#2F442C] font-bold whitespace-nowrap">
             With The Blessings of Lord Guruvayurappan
           </span>
         </motion.div>
@@ -77,12 +77,12 @@ export const PageOneHero: React.FC<PageOneHeroProps> = ({
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.45, duration: 0.8 }}
-          className="space-y-1 mb-3"
+          className="space-y-0.5 sm:space-y-1 mb-1.5 sm:mb-3"
         >
-          <h2 className="font-editorial text-2xl sm:text-3xl text-[#3E583A] font-semibold tracking-wide drop-shadow-[0_1px_1px_rgba(255,255,255,0.8)]">
+          <h2 className="font-editorial text-lg sm:text-3xl text-[#3E583A] font-semibold tracking-wide drop-shadow-[0_1px_1px_rgba(255,255,255,0.8)]">
             {tagline}
           </h2>
-          <p className="font-romantic italic text-base sm:text-lg text-[#4A4238] font-medium">
+          <p className="font-romantic italic text-xs sm:text-lg text-[#4A4238] font-medium">
             {secondaryTagline}
           </p>
         </motion.div>
@@ -92,28 +92,28 @@ export const PageOneHero: React.FC<PageOneHeroProps> = ({
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.6, duration: 0.9 }}
-          className="my-1.5"
+          className="my-0.5 sm:my-1.5"
         >
-          <h1 className="font-editorial text-5xl sm:text-6xl md:text-7xl text-[#263824] font-semibold tracking-wide drop-shadow-[0_2px_10px_rgba(255,255,255,0.9)]">
-            Devika <span className="font-calligraphy text-5xl sm:text-6xl md:text-7xl text-[#B8566B] px-1.5 font-normal">&amp;</span> Ashish
+          <h1 className="font-editorial text-[34px] sm:text-6xl md:text-7xl text-[#263824] font-semibold tracking-wide whitespace-nowrap drop-shadow-[0_2px_10px_rgba(255,255,255,0.9)]">
+            Devika <span className="font-calligraphy text-[38px] sm:text-6xl md:text-7xl text-[#B8566B] px-1 sm:px-1.5 font-normal">&amp;</span> Ashish
           </h1>
         </motion.div>
 
-        <FloralDivider className="my-3 opacity-85" color="#6E8A6A" />
+        <FloralDivider className="my-1.5 sm:my-3 opacity-85" color="#6E8A6A" />
 
         {/* REQUIREMENT 10 & 2: Pink Dress & White T-Shirt Photo with Groom's Face 100% Fully Visible */}
         <motion.div
           initial={{ opacity: 0, y: 25, scale: 0.96 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ delay: 0.75, duration: 0.9 }}
-          className="relative my-4 w-full max-w-sm sm:max-w-md"
+          className="relative my-2 sm:my-4 w-full max-w-[300px] sm:max-w-md"
         >
           {/* Decorative Pastel Frame Halo */}
           <div className="absolute -inset-3 rounded-3xl bg-gradient-to-tr from-[#8FA88B]/35 via-[#E8A598]/30 to-[#C5A869]/35 blur-xl pointer-events-none" />
 
-          <div className="relative rounded-2xl overflow-hidden shadow-[0_22px_50px_rgba(54,75,51,0.22)] bg-white border-2 border-[#C5A869]/65 p-2.5">
+          <div className="relative rounded-2xl overflow-hidden shadow-[0_22px_50px_rgba(54,75,51,0.22)] bg-white border-2 border-[#C5A869]/65 p-1.5 sm:p-2.5">
             {/* The photo container with optimal height and object-position to guarantee Ashish's face is 100% visible */}
-            <div className="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-[#FAF6EE] ring-1 ring-[#C5A869]/30">
+            <div className="relative w-full aspect-[4/4.2] sm:aspect-[4/5] rounded-xl overflow-hidden bg-[#FAF6EE] ring-1 ring-[#C5A869]/30">
               <img
                 src="/images/couple-04-night-candid.png"
                 alt="Devika & Ashish"
